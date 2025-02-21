@@ -1,0 +1,162 @@
+#map img {max-width: 99999px;}
+
+#map {height: 100%; width: 100%; position: absolute;}
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+#menu {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 1rem;
+}
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.75rem;
+  color: #333;
+}
+.nav-link {
+  color: #333;
+  font-size: 1.1rem;
+  padding: 0.75rem 1.25rem;
+  transition: all 0.3s ease;
+}
+.nav-link:hover {
+  color: #007bff;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+}
+.dropdown-menu {
+  background-color: #ffffff;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  display: none;
+  position: absolute;
+  z-index: 1000;
+}
+
+#navbarInfo {
+  padding: 1rem;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+.dropdown-item {
+  font-size: 1rem;
+  color: #333;
+  padding: 0.5rem 1.5rem;
+  transition: background-color 0.3s ease;
+}
+.dropdown-item:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.navbar-text {
+  color: #555;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+@media (max-width: 576px) {
+  .navbar-brand {
+      font-size: 1.5rem;
+  }
+  .nav-link {
+      padding: 0.5rem 1rem;
+  }
+  .dropdown-item {
+      padding: 0.5rem 1rem;
+  }
+  .dropdown-menu {
+      max-width: 100%;
+  }
+}
+
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 2000;
+  overflow: visible;
+  background: rgba(0, 0, 0, 0.7) url('logos/fueluth.gif') no-repeat center center;
+}
+
+#priceList {
+  z-index: 3000;
+}
+
+.offcanvas {
+  position: fixed;
+  width: 300px;
+  max-width: 100%;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.offcanvas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+
+.offcanvas-header h5 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.offcanvas-header .close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.offcanvas-subheader h6{
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.offcanvas-body {
+  flex-grow: 1;
+  padding-top: 1rem;
+  overflow-y: auto;
+}
+
+#loginModal {
+  z-index: 4000;
+}
+
+#orderModal {
+  z-index: 4000;
+}
+
+#ownerOrdersModal {
+  z-index: 4000;
+}
+
+#customerOrdersModal {
+  z-index: 4000;
+}
